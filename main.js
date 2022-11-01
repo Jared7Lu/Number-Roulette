@@ -3,14 +3,24 @@
     // Cstart button
 
     // create function to register players choice
-let playerChoice = document.getElementById("buttonSelection").value;
-// Player shooting
-function playersTurn () {
-    if (playerChose(val) === aiChoice()) {
-    console.log("you Win")
-} else {
-    function aiShoots()
+// document.getElementById('buttonBullet').value = "You Chose";
+
+let bulletChosen = document.getElementById('buttonBullet');
+bulletChosen.addEventListener('click', playerChoice);
+
+function playerChoice() {
+    console.log('hello');
 }
+
+
+// Player shooting
+// function playersTurn () {
+//     if (playerChose(val) === aiChoice()) {
+//     console.log("you Win")
+//     } else {
+
+//     }
+// }
     // create function to register players choice of attack 
     // create function to grey out number once chosen if wrong
     // Make color red if it is a hit
@@ -18,7 +28,6 @@ function playersTurn () {
 // Ai shooting
 
     // create function to make ai choose random number
-const aiChoice = Math.floor(Math.random() * 6) + 1;
     
     // create function to grey out number once chosen if wrong
     // Make color red if it is a hit
@@ -29,9 +38,3 @@ const aiChoice = Math.floor(Math.random() * 6) + 1;
     // create function to decide if player chose the bullet
     // If the bulllet was chosen say "You Die"
     // If the bullter was not chosen say 'You Live'
-playAgainButton = document.getElementById("playAgain");
-playAgainButton.addEventListener("click", playAgain );
-
-function playAgain() {
-
-}

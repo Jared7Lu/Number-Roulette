@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PG Russian Roulette</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
-    <script src="./main.js"></script>
 </head>
 <body>
     <h1>Number Roulette</h1>
@@ -24,16 +23,19 @@
           <p>A.I</p>
         </section>
     </div>
-    <div id="buttonSelection">
-        <input type="radio" value="1" onclick="playerChose()">
-        <input type="radio" value="2" onclick="playerChose()">
-        <input type="radio" value="3" onclick="playerChose()">
-        <input type="radio" value="4" onclick="playerChose()">
-        <input type="radio" value="5" onclick="playerChose()">
-        <input type="radio" value="6" onclick="playerChose()">
-        
-    </div>
+    <form>
+        <button id="buttonBullet">Hit me!</button>
+    </form>
+    <select name="Choose your Number" id="testing123">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select> 
     
-    <button id="playAgain">Play Again</button>
+    <script src="./main.js"></script>
 </body>
 </html>
