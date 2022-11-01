@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PG Russian Roulette</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
     <script src="./main.js"></script>
 </head>
 <body>
-    <!-- make heading -->
     <h1>Number Roulette</h1>
-    <!-- Make Play again button -->
+       <!-- player image and ai image -->
 
-    <!-- player image and ai image -->
-
-    <!-- Numbers(1-6) buttom of characters -->
+    <div class="images">
+        <section>
+          <img src="https://tse1.mm.bing.net/th?id=OIP.yOt1Dn0ejka9wPSVubc2dQHaTu&pid=Api&P=0"
+                alt="Cowboy">
+          <p>Player</p>
+        </section>
+        <section>
+          <img src="https://external-preview.redd.it/HUbJtiWyhs9veO12yI2jbbU3SCQ0iBmVUky3oqKiZnU.jpg?auto=webp&s=116526cfad67c39666f2255398594faaa6c87077" 
+                alt="Dwayne">
+          <p>A.I</p>
+        </section>
+    </div>
+    <div id="buttonSelection">
+        <input type="radio" value="1" onclick="playerChose()">
+        <input type="radio" value="2" onclick="playerChose()">
+        <input type="radio" value="3" onclick="playerChose()">
+        <input type="radio" value="4" onclick="playerChose()">
+        <input type="radio" value="5" onclick="playerChose()">
+        <input type="radio" value="6" onclick="playerChose()">
+        
+    </div>
+    
+    <button id="playAgain">Play Again</button>
 </body>
 </html>

@@ -1,11 +1,30 @@
-/* add images */
-
-    /*player image*/
-    /* Ai image */ 
-    /* background image */
-
-/* Positioning */
-
+h1 {
+    text-align: center;
+    font-size: 55px;
+}
+  /* background image */
+body {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/8fa7126910307.5a212a61b74ce.jpg")
+    
+}
+ /* put player on left side */
+    /* put ai on right side */
+.images {
+    border-top: 1px solid #eee;
+    margin-top: 1.5em;
+    text-align: center;
+  }
+.images section {
+    display: inline-block;
+    width: 44%;
+    margin: 0 1em;
+  }
+.images img {
+    width: 200px;
+    height: 250px;
+    padding-top: 150px;
+  }
+/* } */
     /* put player on left side */
     /* put ai on right side */
     /* numbers under them */
@@ -14,4 +33,6 @@
 
     /* -_- */
 
+    /* play again button */
 
+   
