@@ -1,29 +1,23 @@
-//Player Chooses number 
-
-function playerChoice() {
-    let playerSelected = document.getElementById("testing123").value;
- }
-//AI Chooses number
-let aiChoice = Math.floor(Math.random() * 6) + 1;
-
-//arrays
+function playerChoosing(e) {
+    var playerChoice = document.getElementById('testing123').value
+    console.log(playerChoice)
+}
+let aiNumber = Math.floor(Math.random() *6) +1;
 
 let playerArray = [1, 2, 3, 4, 5, 6]
- let aiArray = [1, 2, 3, 4, 5, 6]
 
-//array filter
+function playerShot(e) {
+    var optionShot = document.getElementById('playerShootingList').value
+    console.log(optionShot)
+    if (optionShot == aiNumber) {
+        alert("you Died")
+    } else {
+        alert("You live")
+    } //else{
+    //     function aiShot();
+    // }
+    }
 
-let aiShoot = playerArray.filter(afterAiShot)
-function afterAiShot(value) {
-    return value % 2 === 0;
-}
-
-//Player chooses another
-
-let playerShoot = aiArray.filter(playerAfterShot)
-function playerAfterShot(value) {
-    return
-}
-
-// ai n player aray
-
+// function aiShot() {
+//   for (i=0; i=playerArray.length; i--)
+// }

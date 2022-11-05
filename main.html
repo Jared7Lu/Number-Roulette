@@ -9,32 +9,40 @@
 </head>
 <body>
     <h1>Number Roulette</h1>
-       <!-- player image and ai image -->
-
     <div class="images">
         <section>
-          <img src="https://tse1.mm.bing.net/th?id=OIP.yOt1Dn0ejka9wPSVubc2dQHaTu&pid=Api&P=0"
-                alt="Cowboy">
+          <img src="https://38.media.tumblr.com/d902edf4453bedd91b13d57a44b155bd/tumblr_n54rlu9jZV1t427mro2_400.gif"
+          alt="Cowboy">
           <p>Player</p>
-        </section>
+        <form onsubmit="playerChoosing(event)" id="choosing">
+          <select id="testing123">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select> 
+        <button id="chooseButton" type="Submit">Choose</button>
+        </form>  
+        </section>  
         <section>
-          <img src="https://external-preview.redd.it/HUbJtiWyhs9veO12yI2jbbU3SCQ0iBmVUky3oqKiZnU.jpg?auto=webp&s=116526cfad67c39666f2255398594faaa6c87077" 
+          <img src="https://media.giphy.com/media/iPuggAost1xde/giphy.gif" 
                 alt="Dwayne">
           <p>A.I</p>
+        <form onsubmit="playerShot(event)" id="shooting">
+            <select id="playerShootingList">
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option>
+             <option value="6">6</option>
+            </select> 
+        <button id="shootButton" type="submit">Shoot</button>
+        </form>
         </section>
     </div>
-    <form>
-        <button id="buttonBullet">Hit me!</button>
-    </form>
-    <select id="testing123" onchange="playerChoice();">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-    </select> 
-    
     <script src="./main.js"></script>
 </body>
 </html>
