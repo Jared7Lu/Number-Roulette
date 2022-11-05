@@ -13,25 +13,31 @@
         <section>
           <img src="https://38.media.tumblr.com/d902edf4453bedd91b13d57a44b155bd/tumblr_n54rlu9jZV1t427mro2_400.gif"
           alt="Cowboy">
-          <p>Player</p>
-        <form onsubmit="playerChoosing(event)" id="choosing">
-          <select id="testing123">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-          </select> 
-        <button id="chooseButton" type="Submit">Choose</button>
-        </form>  
+          <p>Player 1</p>
+          <div>
+            <button id="chooseButton1">Player 1 Choose Your Number</button>
+        </div> 
+        <form onsubmit="player2Shot(event)" id="shooting">
+            <select id="player2ShootingList">
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option>
+             <option value="6">6</option>
+            </select> 
+        <button id="shootButton" type="submit">Shoot</button>
+        </form>
         </section>  
         <section>
           <img src="https://media.giphy.com/media/iPuggAost1xde/giphy.gif" 
                 alt="Dwayne">
-          <p>A.I</p>
-        <form onsubmit="playerShot(event)" id="shooting">
-            <select id="playerShootingList">
+          <p>Player 2</p>
+          <div>
+            <button id="chooseButton2">Player 2 Choose Your Number</button>
+          </div>
+        <form onsubmit="player1Shot(event)" id="shooting">
+            <select id="player1ShootingList">
              <option value="1">1</option>
              <option value="2">2</option>
              <option value="3">3</option>

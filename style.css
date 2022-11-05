@@ -28,7 +28,7 @@ body {
     background-color: greenyellow;
    font-size: 25px;
 }
-#playerShootingList {
+#player1ShootingList, #player2ShootingList {
     background-color: black;
     color: white;
     font-size: 25px;
@@ -38,9 +38,9 @@ body {
     color: white;
     font-size: 25px;
 }
-#chooseButton {
+#chooseButton1, #chooseButton2 {
     background-color: orange;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
 }
    
