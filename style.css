@@ -1,7 +1,12 @@
-h1 {
-    text-align: center;
-    font-size: 55px;
+#imageDictator {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 150px;
+        padding-bottom: 10px;
 }
+
 p {
     font-size: 20px;
     color: purple;
@@ -13,6 +18,7 @@ body {
     border-top: 1px solid #eee;
     margin-top: 1.5em;
     text-align: center;
+    z-index: 2;
   }
 .images section {
     display: inline-block;
@@ -22,25 +28,40 @@ body {
 .images img {
     width: 300px;
     height: 350px;
-    padding-top: 150px;
+    padding-top: 30px;
   }
-#testing123 {
-    background-color: greenyellow;
-   font-size: 25px;
-}
-#player1ShootingList, #player2ShootingList {
-    background-color: black;
-    color: white;
-    font-size: 25px;
-}
-#shootButton {
-    background-color: red;
-    color: white;
-    font-size: 25px;
-}
 #chooseButton1, #chooseButton2 {
-    background-color: orange;
-    color: black;
+    border-color: darkgreen;
+    border-width: 3px;
+    background-color: lightcoral;
+    color: white;
     font-size: 20px;
 }
-   
+#button, #button2 {
+    border-color: black;
+    border-width: 3px;
+    border-style: groove;
+    background-color: rgb(232, 250, 95);
+    font-size: 25px;
+}
+.container {
+    border-color: black;
+    height: 50px;
+    width: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+#span {
+    font-size: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+#resetButton {
+    background-color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    display: none;
+}
