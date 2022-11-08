@@ -58,7 +58,7 @@ body {
     justify-content: center;
 }
 #resetButton {
-    background-color: red;
+    background-color: rgb(192, 28, 28);
     display: block;
     margin-left: auto;
     margin-right: auto;

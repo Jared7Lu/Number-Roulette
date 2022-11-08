@@ -62,16 +62,20 @@ function player2Turn() {
     image.src = "https://media.giphy.com/media/iPuggAost1xde/giphy.gif";
   }
 function player1Died() {
+    var playerImage = document.getElementById("player1Image");
     var image = document.getElementById("imageDictator");
-    image.src = "https://media.giphy.com/media/iPuggAost1xde/giphy.gif";
+    playerImage.style.visibility = "hidden";
+    image.src = "http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/d1e16859c09183b.png";
     image.style.height = '450px';
     image.style.width = '300px';
 }
 function player2Died() {
+    var player2Image = document.getElementById("player2Image");
     var image = document.getElementById("imageDictator");
-    image.src = "https://pngimg.com/uploads/game_over/game_over_PNG22.png" + img + "http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/d1e16859c09183b.png";
-    image.style.height = '450px';
-    image.style.width = '300px';
+    player2Image.style.visibility = "hidden";
+    image.src = "http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/d1e16859c09183b.png";
+    image.style.height = '250px';
+    image.style.width = '340px';
 }
 function resetButtonShow() {
     document.getElementById("resetButton").style.display = "block";
